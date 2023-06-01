@@ -1,0 +1,368 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif; width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+nav{
+background: rgb(1,57,1);
+background: linear-gradient(90deg, rgba(1,57,1,1) 0%, rgba(26,120,5,1) 100%, rgba(0,87,9,1) 200%);/*gradient of darkblue voilet and pink*/
+	z-index: 2;
+	margin-top: -10px;
+
+	font-size: 19px;
+	
+	
+
+}
+
+
+
+nav.nav{
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 2;
+
+
+	
+}
+
+
+nav ul li a{
+	font-weight:900;
+}
+
+
+nav ul li a .nav-link{
+	color: whitesmoke;
+
+	
+}
+
+
+
+
+
+
+.signnav li {
+	list-style-type: none;
+	float: right;
+
+
+}
+
+.signnav li a {
+	text-decoration: none;
+	text-transform: none;
+	padding:3px;
+
+}
+
+.signnav ul li a i:hover{
+	color:#ea5f0b;
+
+
+}
+
+
+.signnav li a i{
+	
+	color: white;
+	z-index:4;;
+
+}
+
+
+
+
+
+/* styling the top background image*/
+
+section.topbg{
+	width: 100%;
+	max-width: 100%;
+	height: 75vh;
+	background-color: darkblue;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/gdoc.jpg) ;
+
+}
+.button{
+	height:40px;
+	width: 200px;
+	transition: ease-out;
+	border-radius:5px;
+	transition: ease-out 0.5s;
+	box-shadow: inset 0 0 0 0  #075b19;
+	color:whitesmoke;
+	border:1px solid;
+
+}
+
+.button a{
+	color: whitesmoke;
+}
+
+
+
+.button:hover {
+	cursor: pointer;
+	box-shadow: inset 200px 0 0 0  green;
+	color:black;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling the the content image*/
+.sideimg{
+
+	height: 45vh;
+	width: 100%;
+	padding: 30px;
+	background-color:red;
+	margin-bottom:50px;
+	background-image: url(../img/hospital.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px lightblue;
+
+}
+
+/* styling the gallery img*/
+.galleryimg img{
+	height: 40vh;
+	width: 100%;
+	box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.1);
+}
+
+
+.gallerycontainer{
+	width: 100%;
+	height: 70vh;
+	background-color:ghostwhite;
+	overflow:scroll;
+	color: whitesmoke;
+
+}
+
+
+.gallerycontainer h1{
+
+	background-color:#075b19;
+	text-align: center;
+	font-weight:900;
+	color:whitesmoke;
+	
+
+}
+
+
+/*styling the about page*/
+
+body > section.about{
+	background-color:whitesmoke;
+	height: 60vh;
+	color:black;
+}
+
+.images{
+
+	    
+           
+           
+            background-size:contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 400px;
+            height: 40vh;
+            border-radius:20px;
+            background-color: whitesmoke;
+
+}
+
+
+/* editing carousel */
+
+
+.carousel-item {
+  transition: opacity 0.9s ease-in;
+
+}
+
+.carousel-item.active {
+  opacity:20;
+}
+
+
+.zoom {
+  animation: zoomInOut 8s infinite alternate;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*styling the contact page*/
+
+
+.conBanner{
+            background: rgba(0,0,0,0.8);
+            background-image: url("../img/bg2.jpg");
+            background-attachment: fixed;
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-blend-mode: overlay;
+            height: 65vh;
+
+            }
+
+.text h1 p{
+	color: white;
+}
+
+
+
+
+
+/*styling the doctors login page*/
+
+ .lockbg{
+
+            background-image: url("../img/lockbg2.jpg");
+            background-size:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+ }
+
+
+
+
+
+
+ /* styling the Docor's dashboard*/
+
+ .sidebar {
+      height: 160vh;
+     	background-color:#075b19;
+      padding: 23px;
+      font-size:18px;
+      color: whitesmoke;
+    }
+
+
+
+
+ .sidebar li a {
+      
+      font-size: 18px;
+      color: whitesmoke;
+      padding: 20px 0px;
+    }
+
+  .sidebar li a:hover {
+   
+      color:#ea5f0b;
+    }
+
+
+      .appointment-dates-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .appointment-dates-table th,
+        .appointment-dates-table td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .appointment-dates-table th {
+            background-color: #075b19;
+            color: whitesmoke;
+        }
+
+        .appointment-dates-table tbody tr:nth-child(even) {
+            background-color:#f2f2f2;
+        }
+
+
+
+        .set-appointment-date {
+    margin-top: 30px;
+  }
+
+  .set-appointment-date label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .set-appointment-date input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+
+  .boxlink{
+  	text-decoration:none;
+  	color: black;
+  }
+
+  .boxlink :hover{
+  	
+  	color: #075b19;
+  	transform: translateY(10px);
+  }
